@@ -42,8 +42,6 @@ function Bridges() {
     const status = bridge.status.status;
     const stl = bridge.status.status_type;
 
-    console.log(stl, status);
-
     return <Card key={key} stl={stl} location={location} status={status} />;
   }
 
