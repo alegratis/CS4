@@ -22,7 +22,7 @@ function Card(props) {
 
   return (
     <div className={customStyle()}>
-      <img className="icon" src={customIcon()} alt="" />
+      <img className="icon" src={customIcon()} alt="Bridge Icon" />
       <h3>{props.location}</h3>
       <p>
         <span className="bold">Status: </span>
