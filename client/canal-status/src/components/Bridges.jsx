@@ -15,8 +15,6 @@ function Bridges() {
 
       const data = result.data.bridges;
 
-      console.log(data);
-
       setBridgeData(data);
       setIsLoading(false);
     } catch (err) {
