@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Card from "./card";
 
-const API_URL = "http://localhost:3001/api";
+const API_URL = "https://cs-4.vercel.app/api";
 
 function Bridges() {
   const [bridgeData, setBridgeData] = useState([]);
