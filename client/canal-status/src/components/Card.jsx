@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function Card(props) {
   const stl = props.stl;
   const customStyle = () => {
