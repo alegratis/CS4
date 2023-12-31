@@ -36,13 +36,29 @@ function Bridges() {
     return <div className="loading">Loading...</div>;
   }
 
+  function strSplit(str) {
+    const text = str;
+
+    const newText = text.split("(");
+    for (let i = 1; i < newText.length; i++) {
+      const final = newText[i].split(")")[0];
+      return final;
+    }
+  }
+
   function mapArray(bridge) {
     const key = bridge.id;
-    const location = bridge.location;
+    const rawLocation = bridge.location;
+    const location = rawLocation.split("(")[0];
+    const city = strSplit(rawLocation);
     const status = bridge.status.status;
     const stl = bridge.status.status_type;
 
-    return <Card key={key} stl={stl} location={location} status={status} />;
+    console.log(location, city);
+
+    return (
+      <Card key={key} stl={stl} bridge={location} city={city} status={status} />
+    );
   }
 
   return <div className="container">{bridgeData.map(mapArray)}</div>;
