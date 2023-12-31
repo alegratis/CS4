@@ -12,11 +12,11 @@ function Card(props) {
 
   const customIcon = () => {
     if (stl === 1) {
-      return "../assets/bridge-available.svg";
+      return "/assets/bridge-available.svg";
     } else if (stl === 2) {
-      return "../assets/bridge-raising.svg";
+      return "/assets/bridge-raising.svg";
     } else if (stl === 0) {
-      return "../assets/bridge-raised.svg";
+      return "/assets/bridge-raised.svg";
     }
   };
 
