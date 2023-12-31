@@ -32,8 +32,16 @@
 
 @media (max-width: 600px) {
   .container {
+    width: 90dvw;
     display: flex;
     flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    width: 100%;
   }
 }
 

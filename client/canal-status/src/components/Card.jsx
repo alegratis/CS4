@@ -22,13 +22,17 @@ function Card(props) {
 
   return (
     <div className={customStyle()}>
-      <img className="icon" src={customIcon()} alt="Bridge Icon" />
-      <h3>{props.bridge}</h3>
-      <h4 className="city">({props.city})</h4>
-      <p>
-        <span className="bold">Status: </span>
-        {props.status}
-      </p>
+      <div className="icon">
+        <img className="icon" src={customIcon()} alt="Bridge Icon" />
+      </div>
+      <div className="content">
+        <h3>{props.bridge}</h3>
+        <h4 className="city">({props.city})</h4>
+        <p>
+          <span className="bold">Status: </span>
+          {props.status}
+        </p>
+      </div>
     </div>
   );
 }
