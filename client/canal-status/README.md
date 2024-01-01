@@ -1,15 +1,18 @@
-# CMS - Desktop Dashboard
+# Welland Canal Status
 
-This isa quick mockup of what a CMS front end could look like, along with some functionality and fun easter eggs.
+I created this live project to have a better experience while driving around the Niagara Region.
+
+Other solutions do exist, but they are either paid or not super user friendly.
 
 ## Built with Vite and React
 
 For this project I used Vite with React, as the hot reloading function makes visualizing changes and absolute breeze.
 
-## Puppies page is functional
+## Public API Access
 
-For lack of imagination. I added a "Puppies" link on the sidebar, and was then asked to make it functional, as it is not fair to tempt people with the idea of a puppy and then not delivering on that. So the Puppies page displays a simple interface with a heading, a photo and a button to retrieve a new pup. This is all thanks to the public [Dog API](https://dog.ceo/dog-api/)
+This app was developed and deployed in two parts, one of a server that retrieves the info from the [canalstatus.com API](https://canalstatus.com/documentation)
+and delivering it in a more mobile friendly interface.
 
 ## Work In Progress
 
-Next plan is to make this site fully responsive and add more functionality to the rest of the pages, the main idea of this demo was to create a mockup for a working sidebar. Getting there!
+Even though the basic functionality is all that is needed for every day use, I will continue to add to this, and potentially translate the code into native platforms in the future. The next step will be to turn this into a PWA.
