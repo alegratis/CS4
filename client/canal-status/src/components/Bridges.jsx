@@ -33,7 +33,7 @@ function Bridges() {
   }, []);
 
   if (isLoading) {
-    return <div className="loading">Loading...</div>;
+    console.log("refreshed for new data");
   }
 
   function strSplit(str) {
