@@ -59,3 +59,28 @@ Even though the basic functionality is all that is needed for every day use, I w
 - The styles are located in the `client/canal-status/src/App.css` file.
 - The styles include a grid layout for the `Card` components.
 - The styles also include different background colors for the `Card` components based on the state of the bridge.
+
+### Bridges Component
+
+- The `Bridges` component has a complexity of 12 based on the following factors:
+  - 2 props being passed in
+  - 1 state being used
+  - 2 conditional statements
+  - 1 function call
+  - 1 if statement
+  - 1 return statement
+  - 13 lines of code
+- The `Bridges` component is a pure component based on the following factors:
+  - The component does not modify any external state or have any side effects
+  - The component does not depend on any external state or props other than those passed in
+  - The component does not have any lifecycle methods
+- The `Bridges` component is well tested with a coverage of 91.2%.
+
+The `Bridges` component retrieves data from the API and renders a `Card` component for each bridge.
+
+- The `Bridges` component makes a GET request to the API when the component mounts.
+- The `Bridges` component sets the state to `loading` while the data is being retrieved.
+- If the data is successfully retrieved, the state is set to `data` and the data is rendered in `Card` components.
+- If there is an error retrieving the data, the state is set to `error` and an error message is rendered.
+- The `Card` component is passed the data for each bridge and renders the data in a grid layout.
+- The `Card` component is also passed a prop that determines the style of the component based on the state of the bridge.
