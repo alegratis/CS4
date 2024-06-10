@@ -1,4 +1,5 @@
-# Welland Canal Status
+# Welland Canal Status 
+[canalstatus.ca](https://www.canalstatus.ca)
 
 I created this live project to have a better experience while driving around the Niagara Region.
 
